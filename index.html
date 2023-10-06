@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D Rotating Image Gallery</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+</html>
+<div class="box">
+    <span style="--i:1;"><img src="img/hinh-anh-3d-800x500.jpg" alt=""></span>
+    <span style="--i:1;"><img src="img/hinh-anh-3d-800x500.jpg" alt=""></span>
+    <span style="--i:1;"><img src="img/hinh-anh-3d-800x500.jpg" alt=""></span>
+    <span style="--i:1;"><img src="img/hinh-anh-3d-800x500.jpg" alt=""></span>
+    <span style="--i:1;"><img src="img/hinh-anh-3d-800x500.jpg" alt=""></span>
+    <span style="--i:1;"><img src="img/hinh-anh-3d-800x500.jpg" alt=""></span>
+    <span style="--i:1;"><img src="img/hinh-anh-3d-800x500.jpg" alt=""></span>
+    <span style="--i:1;"><img src="img/hinh-anh-3d-800x500.jpg" alt=""></span>
+</div>
+<script type="text/javascript">
+    let box = document.querySelector('.box');
+    windown.onmousemove = function (e) {
+        let x = e.clientX / 3;
+        box.style.transform = "perspective(800)px rotateY(" + x + "deg)"
+    }
+</script>
+</body>
+
+</html>
